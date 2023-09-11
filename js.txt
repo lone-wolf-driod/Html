@@ -1,0 +1,9 @@
+function msg(){
+    alert("Checking alert box");
+}
+let a=10;
+let b=20;
+c=a+b;
+function text(){
+    alert(c);
+}

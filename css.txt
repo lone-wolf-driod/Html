@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(251, 253, 253);
+}
+header{
+    background-color: black;
+    color: azure;
+}
+button{
+    background-color: black;
+    color: aqua;
+}
+footer{
+    background-color: black;
+    color: bisque;
+}
+.submit{
+    background-color: blanchedalmond;
+    color: brown;
+}
+.green{
+    background-color: rgb(232, 238, 239);
+    color: rgb(111, 21, 201);
+}
+/*p{
+    background-color: blueviolet;
+    color: darkorange;
+}*/
+#shit{
+    background-color: coral;
+    color: aquamarine;
+    text-align: center;
+    font-family: cursive;
+}
+table{
+    background-color: dodgerblue;
+    color: brown;
+    table-layout: fixed;
+    text-align: left;
+    font-family: cursive;
+}

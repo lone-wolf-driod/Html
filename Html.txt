@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <header><marquee>Learn CSS</marquee></header>
+    <head>
+        <title>The Cascade</title>
+        <link rel="stylesheet" href="14.css">
+        <script type="text/javascript" src="14.js"></script>
+    </head>
+    <body>
+        <h1><strong>The Cascade</strong></h1>
+        <br>
+        <div class="submit">Submit this if you are okay</div>
+        <br>
+        <div class="green">Sometimes two or more competing CSS rules could apply to an element. In this module find out how the browser chooses which to use, and how to control this selection.</div>
+        <br>
+        <div class="submit">CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the following CSS will be blue.</div>
+        <br>
+        <p>Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm is split into 4 distinct stages.</p>
+        <br>
+        <li>
+            <ol>Position and order of appearance: the order of which your CSS rules appear</ol>
+            <ol><strong>Specificity</strong> an algorithm which determines which CSS selector has the strongest match</ol>
+            <ol>Origin: the order of when CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS</ol>
+            <ol>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type</ol>
+        </li>
+        <br>
+        <h2>Specificity</h2>
+        <br>
+        <p>Specificity is an algorithm which determines which CSS selector is the most specific, using a weighting or scoring system to make those calculations. By making a rule more specific, you can cause it to be applied even if some other CSS that matches the selector appears later in the CSS.</p>
+        <br>
+        <p>In the <a href="https://web.dev/learn/css/specificity">next lesson</a> you can learn the details of how specificity is calculated, however keeping a few things in mind will help you avoid too many specificity issues.</p>
+        <br>
+        <p>As you can find out in the next lesson, each type of selector is awarded points which indicate how specific it is, the points for all of the selectors you have used to target an element are added together. This means that if you target an element with a selector list such as a.my-class.another-class[href]:hover you get something quite hard to overwrite with other CSS. For this reason, and to help make your CSS more reusable, it's a good idea to keep your selectors as simple as possible. Use specificity as a tool to get at elements when you need to, but always consider refactoring long, specific selector lists, if you can.</p>
+        <br>
+        <div id="shit">Div is used to diffrantite a line with decoration which is important</div>
+        <br>
+        <table border="3">
+            <caption>ALL</caption>
+            <tr>
+                <th>A</th>
+                <th>1</th>
+                <th>!</th>
+            </tr>
+            <tr>
+                <th>B</th>
+                <th>2</th>
+                <th>@</th>
+            </tr>
+            <tr>
+                <th>C</th>
+                <th>3</th>
+                <th>#</th>
+            </tr>
+            <tr>
+                <th>D</th>
+                <th>4</th>
+                <th>$</th>
+            </tr>
+        </table>
+        <br>
+        <select>
+            <option>Msg1</option>
+            <option>Msg2</option>
+            <option>Msg3</option>
+            <option>Msg4</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="msg()">Submit</button>
+        <br>
+        <br>
+        <a href="https://www.w3schools.com/html/">HtmlTutorial</a>
+        <br>
+        <br>
+        <iframe frameborder="1" width="520" height="445" src="//www.youtube.com/embed/qz0aGYrrlhU"></iframe>
+        <hr>
+        <form>
+            <input type="button" value="Click" onclick="text()">
+        </form>
+        <hr>
+    </body>
+    <footer><marquee>End</marquee></footer>
+</html>
